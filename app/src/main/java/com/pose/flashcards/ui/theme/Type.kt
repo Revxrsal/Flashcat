@@ -1,4 +1,4 @@
-package com.pose.app.ui.theme
+package com.pose.flashcards.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,9 +1,9 @@
-package com.pose.app.di
+package com.pose.flashcards.di
 
 import android.content.Context
 import androidx.room.Room
-import com.pose.app.db.CompDao
-import com.pose.app.db.CompDatabase
+import com.pose.flashcards.db.FlashcardsDao
+import com.pose.flashcards.db.FlashcardsDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,17 +17,17 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDatabase(@ApplicationContext context: Context): CompDatabase {
+    fun provideDatabase(@ApplicationContext context: Context): FlashcardsDatabase {
         return Room.databaseBuilder(
             context,
-            CompDatabase::class.java,
+            FlashcardsDatabase::class.java,
             "comp_database"
         ).fallbackToDestructiveMigration().build()
     }
 
     @Provides
     @Singleton
-    fun provideDao(database: CompDatabase): CompDao {
+    fun provideDao(database: FlashcardsDatabase): FlashcardsDao {
         return database.dao()
     }
 }

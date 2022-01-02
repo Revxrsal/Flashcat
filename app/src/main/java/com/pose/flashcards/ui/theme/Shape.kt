@@ -1,4 +1,4 @@
-package com.pose.app.ui.theme
+package com.pose.flashcards.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

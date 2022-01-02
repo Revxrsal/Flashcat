@@ -1,11 +1,11 @@
-package com.pose.app.db.entity
+package com.pose.flashcards.db.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "entities")
-class CompEntity(
+@Entity(tableName = "flashcards")
+class Flashcard(
     val name: String
 ) {
 
