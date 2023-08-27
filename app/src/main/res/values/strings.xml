@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Flashcards</string>
+    <string name="app_name">Flashcat</string>
+    <string name="term">Term</string>
+    <string name="basic_review_desc">You will see a flashcard that contains a term. You have to remember the definition of the term, and then check your answer. After this, you choose how accurate your answer was.</string>
 </resources>
